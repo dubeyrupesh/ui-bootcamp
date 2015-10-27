@@ -121,11 +121,7 @@ footer div span{
 	position: relative;
 }
 
-#hotspot1{
-	position: absolute;
-	top:100px;
-	left:200px;
-}
+
 
 #hotspot2{
 	position: absolute;
@@ -136,19 +132,55 @@ footer div span{
 .tool-tip{
 	visibility: hidden;
 	position:absolute;
-	left:50px;
 	width: 160px;
-	bottom:10px;
 	background: white;
 	padding:10px;
 	text-align: left;
 }
 
-.hotspot:hover img{
+.hotspot:hover{
 	transform: rotate(45deg);
-
 }
+
 .hotspot:hover .tool-tip{
 	visibility: visible;
+	transform: rotate(-45deg);
+	bottom:100px;
+	left:30px;
 }
+
+.plus-sign:before {
+	background: white;
+	content: "";
+	width: 100%;
+	height: 3px;
+	position: absolute;
+	top: 48%;
+	left:0px;
+
+}
+.plus-sign{
+	content:"";
+	width:40px;
+	height:40px;
+	background: red;
+	border-radius:50%;
+	position:relative;
+}
+.plus-sign:after {
+	background: white;
+	content: "";
+	width: 3px;
+	height: 100%;
+	position: absolute;
+	right: 48%;
+	z-index: 1;
+}
+
+#hotspot1{
+	position: absolute;
+	top:100px;
+	left:200px;
+}
+
 
