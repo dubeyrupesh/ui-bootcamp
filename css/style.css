@@ -6,7 +6,7 @@ body {
 
 
 #main-container{
-	width: 1024px;
+	width: 100%;
 }
 header{
 	background-color: black;
@@ -61,7 +61,7 @@ h3{
 
 .article-container{
 	padding: 10px 10% 60px;
-
+	position:relative;
 }
 
 h4{
@@ -183,4 +183,37 @@ footer div span{
 	left:200px;
 }
 
+@media all and (max-width:1024px){
+	.editorial{
+		padding: 30px;
+		margin: auto;
+	}
+	.content{
+		margin-left: 20%;
+		margin-right: 20%;
+	}
+
+	.article{
+		display: inline-block;
+		padding: 0;
+		position: absolute;
+		margin : auto;
+	}
+
+	.article-container{
+		margin: auto;
+	}
+
+	#article-1
+	{
+		width : 40%;
+	}
+	#article-2{
+		width: 45%;
+	}
+
+	#article-3{
+		width: 100%;}
+
+}
 
